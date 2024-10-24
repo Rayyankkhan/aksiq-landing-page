@@ -1252,6 +1252,7 @@ a.nav-item.nav-link:hover {
     align-items: center;
     gap: 10px;
     display: inline-flex;
+    flex-direction: column;
   }
   
   .Frame507 {
@@ -1261,11 +1262,10 @@ a.nav-item.nav-link:hover {
     align-items: flex-start;
     gap: 20px;
     display: inline-flex;
-    width: 50%;
+   
   }
   
   .CodiaksFromStrategyToSuccess {
-    width: 553px;
     color: #1E1E1E;
     font-size: 34px;
     font-family: 'Clash Display';
@@ -1363,7 +1363,7 @@ a.nav-item.nav-link:hover {
         width: 733px;
             text-align: center;
             color: white;
-            font-size: 100px;
+            font-size: 50px;
             font-family: 'Clash Display';
             font-weight: 500;
             text-transform: capitalize;
@@ -1383,13 +1383,37 @@ a.nav-item.nav-link:hover {
       }
 
       .ourbrand {
-        background-image: url('../img/bg.svg');
-         width: 100%; 
-         height: 100%; 
-         margin-left: 0; 
-         background-position: top; 
-         background-repeat: no-repeat;
-        background-size: contain;
+            /* background-image: url('../img/bg.svg'); */
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 47px;
+    }
+
+    .letsimg {
+        background-image: url('../img/bg51.svg');
+            width: 90%;
+            height: 240px;
+            background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+      }
+
+
+
+    
+
+    @media (min-width: 996px) {
+        .Frame516 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        
     }
 
 
@@ -1414,6 +1438,7 @@ a.nav-item.nav-link:hover {
              background-position: top; 
              background-repeat: no-repeat;
             background-size: contain;
+            background-color: transparent;
         }
 
         .CodiaksFromStrategyToSuccess {
@@ -1478,6 +1503,26 @@ a.nav-item.nav-link:hover {
             height: 455px;
             border-radius: 30px;
           }
+
+          .letsgrow {
+            width: 733px;
+                text-align: center;
+                color: white;
+                font-size: 100px;
+                font-family: 'Clash Display';
+                font-weight: 500;
+                text-transform: capitalize;
+                word-wrap: break-word;
+          }
+
+          .letsimg {
+            background-image: url('../img/bg51.svg');
+                width: 1444px;
+                height: 500px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+          }
           
         
       }
@@ -1507,6 +1552,7 @@ a.nav-item.nav-link:hover {
              height: 1196px; 
              margin-left: -7.5%; 
              background-position: center; background-repeat: no-repeat; background-size: cover;
+             background-color: transparent;
         }
 
         .Frame516 {
@@ -1540,4 +1586,124 @@ a.nav-item.nav-link:hover {
                 word-wrap: break-word; 
              }
     
+      }
+
+      @media (max-width: 1440px ) {
+        .letsimg{
+            width: 90%;
+            background-position: center;
+            background-size: contain;
+        }
+      }
+
+
+      @media (max-width: 768px) {
+        
+        .top-40 {
+            top: 10% !important;
+            width: 90% !important;
+            left: 5% !important;
+        }
+
+        .header-carousel-item-img-2 {
+            background-image: url('../img/hero-bg (2).svg');
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+         }
+
+         .img-fluid {
+            display: none;
+         }
+ 
+      }
+
+
+      @media (max-width: 450px) {
+
+        .btn.btn-light {
+            padding: .5rem 1rem !important;
+            font-size: 13px !important;
+        }
+
+        .arrow-up {
+            font-size: 22px !important;
+        }
+
+        .logowidth {
+            width: 120px;
+        }
+
+        .hamburger {
+            width: 33px !important;
+        }
+        .top-40 {
+            top: 10% !important;
+            width: 90% !important;
+            left: 5% !important;
+        }
+
+        .text-body {
+            font-size: 12px !important;
+            margin-top: .2rem;
+            background-color: white;
+        }
+
+        .Frame520 {
+            width: 100% !important;
+        }
+
+        .Frame504, .Frame518, .Frame519 {
+            padding: 5px 20px !important;
+        }
+
+        .Codiaks, .Cloudiaks, .Tbml {
+            font-size: 14px !important;
+        }
+
+        .letsgrow {
+            width: 100% !important;
+        }
+
+        .explore{
+            font-size: 29px;
+        }
+
+        .empower {
+            font-size: 30px !important;
+            line-height: 2rem;
+            width: 100% !important;
+        }
+
+        .sticky-top {
+            background-color: #000;
+            width: 100% !important;
+
+        }
+
+        .Image {
+            width: 100% !important;
+            height: 100% !important;
+            border-radius: 30px !important;
+          }
+
+        .header-carousel-item-img-2 {
+           background-image: url('../img/hero-bg (2).svg');
+           background-position: center;
+           background-size: cover;
+           height: 500px;
+        }
+
+
+
+
+
+        .img-fluid {
+           display: none !important
+        }
+        .aksiq-para {
+            font-size: 10px !important;
+            width: 100% !important;
+            padding: 0 !important;
+        }
       }
