@@ -356,7 +356,7 @@ progress {
 
 @media(min-width: 1200px) {
 .display-1 {
-	font-size: 7rem
+	font-size: 4rem
 }
 }
 .display-2 {
@@ -507,6 +507,7 @@ progress {
 .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
 	max-width: 1320px
 }
+
 }
 .row {
 --bs-gutter-x: 1.5rem;
@@ -5102,7 +5103,7 @@ background-position-x:1rem
 .carousel-caption {
 	position: absolute;
 	right: 15%;
-	bottom: 1.25rem;
+	/* bottom: 1.25rem; */
 	left: 15%;
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;

@@ -1,7 +1,22 @@
-@import url('/font/ClashDisplay_Complete/Fonts/TTF/ClashDisplay-Variable.ttf');
-@import url('/font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf');
+@import url('/font/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+@import url('/font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.ttf');
+
+
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+
+@font-face {
+    font-family: 'Clash Display';  /* Name for the font */
+    src: url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.ttf') format('truetype'),
+         url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.eot') format('truetype'),
+         url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff') format('truetype'),
+         url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff2') format('truetype'),
+    ;
+    font-weight: normal; /* Optional: specify if it's bold or not */
+    font-style: normal;  /* Optional: specify if it's italic or not */
+  }
+  
 
 
 .img-res {
@@ -133,7 +148,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 /*** Spinner ***/
 .position {
     position: absolute;
-    top: 46px;
+    top: 10px;
 }
 .project-bg {
 	background-image: url(../img/group-1000005492.png);
@@ -1180,17 +1195,17 @@ a.nav-item.nav-link:hover {
 .Frame520 {
     width: 479px;
     height: 55px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    display: inline-flex;
+    display: flex;
   }
   
-  .Frame503 {
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .Frame504 {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: linear-gradient(90deg, #57CBFF 0%, #199BD5 90%);
     border-radius: 100px;
     justify-content: center;
@@ -1202,7 +1217,7 @@ a.nav-item.nav-link:hover {
   .Codiaks {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
     text-transform: capitalize;
@@ -1210,10 +1225,10 @@ a.nav-item.nav-link:hover {
   }
   
   .Frame518, .Frame519 {
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #DBDBDB;
     border-radius: 100px;
     justify-content: center;
@@ -1225,7 +1240,7 @@ a.nav-item.nav-link:hover {
   .Cloudiaks, .Tbml {
     text-align: center;
     color: #1C1C1C;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
     text-transform: capitalize;
@@ -1233,27 +1248,26 @@ a.nav-item.nav-link:hover {
   }
 
   .Frame516 {
-    width: 1236px;
-    height: 455px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 109px;
+    gap: 10px;
     display: inline-flex;
   }
   
   .Frame507 {
-    width: 608px;
+    /* width: 608px; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
     display: inline-flex;
+    width: 50%;
   }
   
   .CodiaksFromStrategyToSuccess {
     width: 553px;
     color: #1E1E1E;
-    font-size: 55px;
+    font-size: 34px;
     font-family: 'Clash Display';
     font-weight: 500;
     text-transform: capitalize;
@@ -1262,7 +1276,7 @@ a.nav-item.nav-link:hover {
   
   .Frame521 {
     align-self: stretch;
-    height: 230px;
+    
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1273,7 +1287,7 @@ a.nav-item.nav-link:hover {
   .CodiaksDescription {
     align-self: stretch;
     color: #1E1E1E;
-    font-size: 22px;
+    font-size: 16px;
     font-family: 'Satoshi', sans-serif;
     font-weight: 400;
     line-height: 35px;
@@ -1281,10 +1295,10 @@ a.nav-item.nav-link:hover {
   }
   
   .Frame503 {
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: linear-gradient(90deg, #57CBFF 0%, #199BD5 90%);
     border-radius: 100px;
     justify-content: center;
@@ -1296,7 +1310,7 @@ a.nav-item.nav-link:hover {
   .KnowMore {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Clash Display';
     font-weight: 500;
     text-transform: capitalize;
@@ -1304,27 +1318,27 @@ a.nav-item.nav-link:hover {
   }
   
   .Image {
-    width: 519px;
+    width: 50%;
     height: 455px;
     border-radius: 30px;
   }
   
   .top-40 {
-    top: 30% !important;
+    top: 17% !important;
   }
 
   .card01 {
-    width: 239.20px;
-        height: 168px;
-        background: white;
-        border-radius: 15px;
+    width: 200.2px;
+    height: 135px;
+    background: white;
+    border-radius: 15px;
   }
 
   .title-product {
-    width: 216px;
+    
         text-align: center;
         color: #1E1E1E;
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Clash Display';
         font-weight: 500;
         text-transform: capitalize;
@@ -1354,4 +1368,176 @@ a.nav-item.nav-link:hover {
             font-weight: 500;
             text-transform: capitalize;
             word-wrap: break-word;
+      }
+
+      .logowidth {
+        width: 180px;
+      }
+
+      .p-icon {
+        width: 40px;
+      }
+
+      .display-1 {
+        font-size: 3rem !important;
+      }
+
+      .ourbrand {
+        background-image: url('../img/bg.svg');
+         width: 100%; 
+         height: 100%; 
+         margin-left: 0; 
+         background-position: top; 
+         background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+      @media (min-width: 1200px) {
+        .display-1 {
+            font-size: 4.8rem !important;
+        }
+
+        .top-40 {
+            top: 17% !important;
+          }
+          .position {
+            position: absolute;
+            top: 46px;
+        }
+
+        .ourbrand {
+            background-image: url('../img/bg.svg');
+             width: 1300px; 
+             height: 1196px; 
+             margin-left: 0; 
+             background-position: top; 
+             background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .CodiaksFromStrategyToSuccess {
+            width: 553px;
+            color: #1E1E1E;
+            font-size: 55px;
+            font-family: 'Clash Display';
+            font-weight: 500;
+            text-transform: capitalize;
+            word-wrap: break-word;
+          }
+
+
+        .display-3 {
+            font-size: 3.6rem;
+        }
+
+        .Frame507 {
+            width: 608px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            display: inline-flex;
+          }
+
+        .CodiaksDescription {
+            align-self: stretch;
+            color: #1E1E1E;
+            font-size: 22px;
+            font-family: 'Satoshi', sans-serif;
+            font-weight: 400;
+            line-height: 35px;
+            word-wrap: break-word;
+          }
+          
+          .Frame503 {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: linear-gradient(90deg, #57CBFF 0%, #199BD5 90%);
+            border-radius: 100px;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            display: inline-flex;
+          }
+          
+          .KnowMore {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            font-family: 'Clash Display';
+            font-weight: 500;
+            text-transform: capitalize;
+            word-wrap: break-word;
+          }
+          
+          .Image {
+            width: 519px;
+            height: 455px;
+            border-radius: 30px;
+          }
+          
+        
+      }
+
+
+      @media (min-width: 1445px) {
+        .display-1 {
+            font-size: 6.1rem !important;
+        }
+        .top-40 {
+            top: 25% !important;
+          }
+          .position {
+            position: absolute;
+            top: 60px;
+        }
+        .logowidth {
+            width: 230px;
+        }
+        .navbar {
+            padding: 0 92px 0 92px !important;
+        }
+
+        .ourbrand {
+            background-image: url('../img/bg.svg');
+             width: 1440px; 
+             height: 1196px; 
+             margin-left: -7.5%; 
+             background-position: center; background-repeat: no-repeat; background-size: cover;
+        }
+
+        .Frame516 {
+            width: 1236px;
+            height: 455px;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 109px;
+            display: inline-flex;
+          }
+
+          .card01 {
+            width: 239.20px;
+                height: 168px;
+                background: white;
+                border-radius: 15px;
+          }
+
+          .p-icon {
+            width: 60px;
+          }
+
+          .title-product {
+            width: 216px;
+                text-align: center;
+                color: #1E1E1E;
+                font-size: 20px;
+                font-family: 'Clash Display';
+                font-weight: 500;
+                text-transform: capitalize;
+                word-wrap: break-word; 
+             }
+    
       }
