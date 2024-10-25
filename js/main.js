@@ -82,13 +82,14 @@
         autoplay: true,
         smartSpeed: 1000,
         center: false,
-        dots: true,
+        dots: false,
         loop: true,
-        margin: 25,
+        // margin: 25,
+        innerHeight: 100,
         nav : false,
         navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+            '<i class="bi bi-arrow-left text-white"></i>',
+            '<i class="bi bi-arrow-right text-white"></i>'
         ],
         responsiveClass: true,
         responsive: {
@@ -99,29 +100,32 @@
                 items:1
             },
             768:{
-                items:2
+                items:3
             },
             992:{
-                items:2
+                items:4
             },
             1200:{
-                items:2
+                items:6
+            },
+            1445: {
+                items: 8
             }
         }
     });
 
     // testimonial carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1500,
         center: false,
-        dots: true,
+        dots: false,
         loop: true,
-        margin: 25,
-        nav : false,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+        // margin: 25,
+        nav : true,
+        navText: [
+            ' <div  class="btn btn-outline-dark ">Previous</div> ',
+            '<div class="btn btn-outline-dark ">Next </div>  </div>'
         ],
         responsiveClass: true,
         responsive: {
@@ -132,7 +136,7 @@
                 items:1
             },
             768:{
-                items:2
+                items:1
             },
             992:{
                 items:2
