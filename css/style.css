@@ -1184,8 +1184,7 @@ a.nav-item.nav-link:hover {
 }
 
 .arrow-up {
-    rotate: -40deg !important;
-    font-size: 2.2rem;
+    width: 22px;
 }
 
 .bg-black {
@@ -1401,6 +1400,16 @@ a.nav-item.nav-link:hover {
             background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+      }
+
+      .btn.btn-light:hover {
+        background-color: #29A0D6 !important;
+        color: white !important;
+        border: transparent !important;
+      }
+
+      .btn.btn-light {
+        padding: 10px 20px !important;
       }
 
 
@@ -1622,12 +1631,12 @@ a.nav-item.nav-link:hover {
       @media (max-width: 450px) {
 
         .btn.btn-light {
-            padding: .5rem 1rem !important;
+            padding: 8px 15px !important;
             font-size: 13px !important;
         }
 
         .arrow-up {
-            font-size: 22px !important;
+            width: 18px !important;
         }
 
         .logowidth {
@@ -1643,14 +1652,32 @@ a.nav-item.nav-link:hover {
             left: 5% !important;
         }
 
+        .letsimg {
+            gap: 2px !important;
+            height: 140px !important;
+        }
         .text-body {
             font-size: 12px !important;
             margin-top: .2rem;
             background-color: white;
         }
 
+        .Frame521 {
+            gap: 10px;
+        }
+
+        .Frame516 {
+            gap: 15px !important;
+        }
+        .CodiaksFromStrategyToSuccess{
+            font-size: 33px !important;
+        }
+
         .Frame520 {
             width: 100% !important;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5rem !important;
         }
 
         .Frame504, .Frame518, .Frame519 {
@@ -1663,6 +1690,7 @@ a.nav-item.nav-link:hover {
 
         .letsgrow {
             width: 100% !important;
+            font-size: 30px !important;
         }
 
         .explore{
