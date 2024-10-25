@@ -1180,7 +1180,7 @@ a.nav-item.nav-link:hover {
 }
 
 .satoshi {
-    font-family: 'Satoshi';
+    font-family: 'Satoshi' !important;
 }
 
 .arrow-up {
@@ -1200,7 +1200,7 @@ a.nav-item.nav-link:hover {
     display: flex;
   }
   
-  .Frame504 {
+  /* .Frame504 {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
@@ -1211,9 +1211,9 @@ a.nav-item.nav-link:hover {
     align-items: center;
     gap: 5px;
     display: flex;
-  }
+  } */
   
-  .Codiaks {
+  /* .Codiaks {
     text-align: center;
     color: white;
     font-size: 16px;
@@ -1221,24 +1221,24 @@ a.nav-item.nav-link:hover {
     font-weight: 500;
     text-transform: capitalize;
     word-wrap: break-word;
+  } */
+  
+  .Cloudiaks, .Tbml, .Codiaks {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    background: #DBDBDB !important;
+    border-radius: 100px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 5px !important;
+    display: flex !important;
   }
   
-  .Frame518, .Frame519 {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #DBDBDB;
-    border-radius: 100px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    display: flex;
-  }
-  
-  .Cloudiaks, .Tbml {
+  .Cloudiaks, .Tbml, .Codiaks {
     text-align: center;
-    color: #1C1C1C;
+    color: #1C1C1C !important;
     font-size: 16px;
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
@@ -1411,6 +1411,23 @@ a.nav-item.nav-link:hover {
       .btn.btn-light {
         padding: 10px 20px !important;
       }
+
+      button {
+        background: transparent !important;
+        border: none !important;
+      }
+
+      .nav-tabs {
+            border-bottom: none !important;
+      }
+
+      .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        color: white !important;
+        background: linear-gradient(90deg, #57CBFF 0%, #199BD5 90%) !important;
+      }
+
+
+      
 
 
 
@@ -1607,7 +1624,11 @@ a.nav-item.nav-link:hover {
 
 
       @media (max-width: 768px) {
-        
+        .fot-text {
+            font-size: 33px !important;
+            line-height: 35px !important;
+            margin: 1rem 0 2rem 0;
+        }
         .top-40 {
             top: 10% !important;
             width: 90% !important;
