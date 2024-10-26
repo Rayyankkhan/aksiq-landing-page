@@ -16,6 +16,17 @@
     font-weight: normal; /* Optional: specify if it's bold or not */
     font-style: normal;  /* Optional: specify if it's italic or not */
   }
+
+@font-face {
+    font-family: 'Clash Display Medium';  /* Name for the font */
+    src: url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.ttf') format('truetype'),
+         url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.eot') format('truetype'),
+         url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff') format('truetype'),
+         url('../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff2') format('truetype'),
+    ;
+    font-weight: normal; /* Optional: specify if it's bold or not */
+    font-style: normal;  /* Optional: specify if it's italic or not */
+  }
   
 
 
@@ -1326,7 +1337,7 @@ a.nav-item.nav-link:hover {
   }
   
   .top-40 {
-    top: 17% !important;
+    top: 12% !important;
   }
 
   .card01 {
@@ -1384,17 +1395,7 @@ a.nav-item.nav-link:hover {
         font-size: 3rem !important;
       }
 
-      .ourbrand {
-            /* background-image: url('../img/bg.svg'); */
-    background-color: #f6f6f6;
-    width: 100%;
-    height: 100%;
-    margin-left: 0;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 47px;
-    }
+
 
     .letsimg {
         background-image: url('../img/bg51.svg');
@@ -1431,8 +1432,10 @@ a.nav-item.nav-link:hover {
 
     .project-carousel >  .owl-stage-outer {
         height: 200px !important;
-       
-    } 
+        padding-top: 20px;
+        gap: 10px;
+        display: inline-block;
+        } 
 
 
     .owl-item {
@@ -1456,7 +1459,38 @@ a.nav-item.nav-link:hover {
     }
 
 
-      
+
+
+    @media (max-width: 1024px) {
+        .ourbrand {
+            background-image: url('../img/1024.svg');
+             width: 940px; 
+             height: 1070px; 
+             margin-left: 0; 
+             background-position: top; 
+             background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .ourbrand {
+            background-image: url('../img/768bg.svg');
+             width: 700px; 
+             height: 1276px; 
+             margin-left: 0; 
+             background-position: top; 
+             background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            padding: .5rem;
+        }
+
+        .Image {
+            height: 100% !important;
+        }
+    }
 
 
 
@@ -1478,7 +1512,7 @@ a.nav-item.nav-link:hover {
         }
 
         .top-40 {
-            top: 17% !important;
+            top: 12% !important;
           }
           .position {
             position: absolute;
@@ -1588,7 +1622,7 @@ a.nav-item.nav-link:hover {
             font-size: 6.1rem !important;
         }
         .top-40 {
-            top: 25% !important;
+            top: 12% !important;
           }
           .position {
             position: absolute;
@@ -1680,6 +1714,17 @@ a.nav-item.nav-link:hover {
 
       @media (max-width: 450px) {
 
+        .ourbrand {
+            background-image: url('../img/mobbg.svg');
+            width: 100%; 
+            height: 1343px; 
+            margin-left: 0; 
+            background-position: top; 
+            background-repeat: no-repeat;
+           background-size: contain;
+           background-color: transparent;
+           padding: .5rem;
+        }
         .btn.btn-light {
             padding: 8px 15px !important;
             font-size: 13px !important;
@@ -1726,13 +1771,17 @@ a.nav-item.nav-link:hover {
 
         .Frame521 {
             gap: 10px;
+            justify-content: center;
+            align-items: center;
         }
 
         .Frame516 {
             gap: 15px !important;
         }
         .CodiaksFromStrategyToSuccess{
-            font-size: 33px !important;
+            font-size: 26px !important;
+            text-align: center;
+            font-weight: 600;
         }
 
         .Frame520 {
@@ -1752,11 +1801,17 @@ a.nav-item.nav-link:hover {
 
         .letsgrow {
             width: 100% !important;
-            font-size: 30px !important;
+            font-size: 50px !important;
+            font-family: 'Clash Display Medium' !important;
+            letter-spacing: .1rem;
         }
 
         .explore{
             font-size: 29px;
+        }
+
+        .KnowMore {
+            font-size: 14px !important;
         }
 
         .empower {
@@ -1765,14 +1820,49 @@ a.nav-item.nav-link:hover {
             width: 100% !important;
         }
 
+        .card01 {
+            width: 150px !important;
+            height: 120px !important;
+        }
+
         .sticky-top {
             background-color: #000;
             width: 100% !important;
 
         }
 
+        .ourclient {
+            font-size: 14px;
+            text-align: center;
+            
+        }
+
+        .testimonial-image {
+            width: 14% !important;
+            height: 14% !important; 
+        }
+
+        .quotes {
+            font-size: 25px;
+        }
+
+        .testimonial-item {
+            height: 223px !important;
+            border-radius: 15px !important;
+            padding: .7rem !important;
+        }
+
+        .owl-nav {
+            display: none !important;
+        }
+
+
+
+
+
+
         .Image {
-            width: 100% !important;
+            width: 90% !important;
             height: 100% !important;
             border-radius: 30px !important;
           }
@@ -1784,7 +1874,33 @@ a.nav-item.nav-link:hover {
            height: 500px;
         }
 
+        .Frame507 {
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
 
+        .CodiaksDescription {
+            text-align: center;
+            font-size: 14px;
+            line-height: 23px;
+        }
+
+        .Frame503 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .p-icon {
+            width: 45px;
+        }
+
+
+        .Image {
+            width: 50%;
+        }
 
 
 
@@ -1828,4 +1944,89 @@ a.nav-item.nav-link:hover {
             width: 12px;
         }
 
+        .title-product {
+            font-size: 14px ;
+        }
+
+
+        .card1 > img {
+            width: 70px !important;
+        }
+
+        .card1 > .mcb {
+            width: 50px !important;
+        } 
+
+        .card1 {
+            width: 100px !important; 
+            height: 80px !important;
+        }
+
+        .display-4 {
+            text-align: center !important;
+            font-size: 26px !important;
+        }
+        .center {
+            text-align: center !important;
+            font-size: 12px !important;
+        }
+
+        .dcenter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p.sora, p.satoshi {
+            text-align: center;
+        }
+
+        p.sora {
+            font-size: 20px !important;
+        }
+
+        .dflex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .li-footer {
+            font-size: 14px !important;
+        }
+      }
+
+
+      @media (max-width: 325px) {
+        .card01 {
+            width: 120px !important;
+            height: 76px !important;
+        }
+
+        .p-icon {
+            width: 24px;
+        }
+
+        .title-product {
+            font-size: 11.5px;
+        }
+
+        .ourbrand {
+            height: 1042px;
+        }
+
+        h6.text-dark {
+            font-size: 10px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .testimonial-fonts {
+            margin: 0 !important;
+        }
+
+        .explore {
+            font-size: 20px !important;
+        }
       }
