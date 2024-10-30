@@ -1484,7 +1484,7 @@ a.nav-item.nav-link:hover {
              background-repeat: no-repeat;
             background-size: contain;
             background-color: transparent;
-            padding: .5rem;
+            padding: .5rem !important;
         }
 
         .Image {
@@ -1723,7 +1723,7 @@ a.nav-item.nav-link:hover {
             background-repeat: no-repeat;
            background-size: contain;
            background-color: transparent;
-           padding: .5rem;
+           padding: .5rem !important;
         }
         .btn.btn-light {
             padding: 8px 15px !important;
@@ -1994,6 +1994,10 @@ a.nav-item.nav-link:hover {
 
         .li-footer {
             font-size: 14px !important;
+        }
+
+        .CodiaksDescription {
+            padding: .2rem .9rem !important;
         }
       }
 

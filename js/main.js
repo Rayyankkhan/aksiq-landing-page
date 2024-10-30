@@ -78,44 +78,172 @@
 
 
     // Project carousel
+    // $(".project-carousel").owlCarousel({
+    //     // autoplay: true,
+    //     // slideTransition: 'linear',
+    //     // autoplayTimeout: 0,
+    //     // autoplaySpeed: 3000,
+    //     // autoplayHoverPause: false,
+    //     // items: 8,
+    //     // center: false,
+    //     dots: false,
+    //     // loop: true,
+    //     items: 7,
+    //     loop: true,
+    //     autoplay: true,
+    //     slideTransition: 'linear',
+    //     autoplayTimeout: 0,
+    //     autoplaySpeed: 5000,
+    //     autoplayHoverPause: false,
+    //     margin: 8,
+    //     nav : false,
+    //     navText : [
+    //         '<i class="bi bi-arrow-left text-white"></i>',
+    //         '<i class="bi bi-arrow-right text-white"></i>'
+    //     ],
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0:{
+    //             items:3
+    //         },
+    //         390: {
+    //             items: 4
+    //         },
+    //         576:{
+    //             items:4
+    //         },
+    //         768:{
+    //             items:3
+    //         },
+    //         992:{
+    //             items:4
+    //         },
+    //         1200:{
+    //             items:6
+    //         },
+    //         1445: {
+    //             items: 8
+    //         }
+    //     }
+    // });
+
+    // $(".project-carousel").owlCarousel({
+    //     // autoplay: true,
+    //     // slideTransition: 'linear',
+    //     // autoplayTimeout: 0, // no delay between items
+    //     // autoplaySpeed: 5000, // adjust this for scroll speed
+    //     // autoplayHoverPause: false,
+    //     items: 7,
+    //     loop: true,
+    //     margin: 8,
+    //     dots: false,
+    //     nav: false,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 3
+    //         },
+    //         390: {
+    //             items: 4
+    //         },
+    //         576: {
+    //             items: 4
+    //         },
+    //         768: {
+    //             items: 3
+    //         },
+    //         992: {
+    //             items: 4
+    //         },
+    //         1200: {
+    //             items: 6
+    //         },
+    //         1445: {
+    //             items: 8
+    //         }
+    //     }
+    // });
+
+    // $(".project-carousel").owlCarousel({
+    //     items: 7,
+    //     loop: true,
+    //     margin: 8,
+    //     dots: false,
+    //     nav: false,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 3
+    //         },
+    //         390: {
+    //             items: 4
+    //         },
+    //         576: {
+    //             items: 4
+    //         },
+    //         768: {
+    //             items: 3
+    //         },
+    //         992: {
+    //             items: 4
+    //         },
+    //         1200: {
+    //             items: 6
+    //         },
+    //         1445: {
+    //             items: 8
+    //         }
+    //     }
+    // });
+
     $(".project-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: false,
-        dots: false,
+        items: 8,
         loop: true,
         margin: 8,
-        innerHeight: 100,
-        nav : false,
+        dots: false,
+        nav: false,
         navText : [
-            '<i class="bi bi-arrow-left text-white"></i>',
-            '<i class="bi bi-arrow-right text-white"></i>'
-        ],
+                    '<i class="bi bi-arrow-left text-white"></i>',
+                    '<i class="bi bi-arrow-right text-white"></i>'
+                ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:3
-            },
-            390: {
-                items: 4
-            },
-            576:{
-                items:4
-            },
-            768:{
-                items:3
-            },
-            992:{
-                items:4
-            },
-            1200:{
-                items:6
-            },
-            1445: {
-                items: 8
-            }
+            0: { items: 3 },
+            390: { items: 4 },
+            576: { items: 4 },
+            768: { items: 3 },
+            992: { items: 4 },
+            1200: { items: 6 },
+            1445: { items: 8 }
         }
     });
+
+
+    function continuousScroll() {
+        let $carousel = $('.project-carousel .owl-stage');
+    
+        function scroll() {
+            let firstItemWidth = $carousel.children().first().outerWidth(true);
+            $carousel.animate(
+                { marginLeft: -firstItemWidth },
+                2000, // Adjust scroll speed here
+                'linear',
+                function () {
+                    $carousel.css('margin-left', '0');
+                    $carousel.children().first().appendTo($carousel);
+                    scroll(); // Recursive call to keep scrolling
+                }
+            );
+        }
+    
+        scroll();
+    }
+    
+    continuousScroll();
+    
+    
+    
+    
 
     // testimonial carousel
     $(".testimonial-carousel").owlCarousel({
@@ -174,4 +302,7 @@
 
 
 })(jQuery);
+
+
+
 
