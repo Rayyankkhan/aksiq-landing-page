@@ -208,7 +208,7 @@
                 ],
         responsiveClass: true,
         responsive: {
-            0: { items: 3 },
+            0: { items: 2 },
             390: { items: 4 },
             576: { items: 4 },
             768: { items: 3 },
