@@ -1626,7 +1626,7 @@ a.nav-item.nav-link:hover {
             font-size: 6.1rem !important;
         }
         .top-40 {
-            top: 12% !important;
+            top: 20% !important;
           }
           .position {
             position: absolute;
@@ -1692,7 +1692,7 @@ a.nav-item.nav-link:hover {
 
       @media (max-width: 768px) {
         .fot-text {
-            font-size: 33px !important;
+            font-size: 30px !important;
             line-height: 35px !important;
             margin: 1rem 0 2rem 0;
         }
@@ -1718,6 +1718,14 @@ a.nav-item.nav-link:hover {
 
       @media (max-width: 450px) {
 
+        .fot-text {
+            font-size: 28px !important;
+           
+        }
+       
+        .cmg {
+            margin: 1.5rem 0 !important;
+        }
         .ourbrand {
             background-image: url('../img/mobbg.svg');
             width: 100%; 
@@ -2005,8 +2013,23 @@ a.nav-item.nav-link:hover {
         }
       }
 
+      @media (max-width: 376px) {
+        .diff {
+            font-size: 13px !important;
+            line-height: 16px !important;
+        }
+
+        .cmg {
+            margin: .5rem 0 !important;
+        }
+      }
+
 
       @media (max-width: 325px) {
+        .fot-text {
+            font-size: 24px !important;
+            
+        }
         .card01 {
             width: 120px !important;
             height: 76px !important;
